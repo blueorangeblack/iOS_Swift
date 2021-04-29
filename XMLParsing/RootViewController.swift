@@ -31,7 +31,7 @@ class RootViewController: UITableViewController {
         }else{
             self.title = "파싱 실패"
         }
-        //NSLog("\(books)")
+        //NSLog("books : \(books)")
     }
 
     // MARK: - Table view data source
