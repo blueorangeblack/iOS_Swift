@@ -168,6 +168,27 @@
 		12C9DD3526394B6B0009E930 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C9DD3326394B6B0009E930 /* LaunchScreen.storyboard */; };
 		12C9DD4E26394C1E0009E930 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DD4D26394C1E0009E930 /* RootViewController.swift */; };
 		12C9DD632639502F0009E930 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DD622639502F0009E930 /* Book.swift */; };
+		12E9B98A263F822300D9E2BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9B989263F822300D9E2BA /* AppDelegate.swift */; };
+		12E9B98C263F822300D9E2BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9B98B263F822300D9E2BA /* SceneDelegate.swift */; };
+		12E9B991263F822300D9E2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B98F263F822300D9E2BA /* Main.storyboard */; };
+		12E9B993263F822400D9E2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B992263F822400D9E2BA /* Assets.xcassets */; };
+		12E9B996263F822400D9E2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E9B994263F822400D9E2BA /* LaunchScreen.storyboard */; };
+		12E9B9B5263F839200D9E2BA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E9B9B4263F839200D9E2BA /* libsqlite3.0.tbd */; };
+		12E9B9DC263F86B400D9E2BA /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E9B9D5263F86B400D9E2BA /* FMDatabaseAdditions.m */; };
+		12E9B9DD263F86B400D9E2BA /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E9B9D6263F86B400D9E2BA /* FMDatabaseQueue.m */; };
+		12E9B9DE263F86B400D9E2BA /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E9B9D7263F86B400D9E2BA /* FMDatabase.m */; };
+		12E9B9DF263F86B400D9E2BA /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E9B9D9263F86B400D9E2BA /* FMDatabasePool.m */; };
+		12E9B9E0263F86B400D9E2BA /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E9B9DB263F86B400D9E2BA /* FMResultSet.m */; };
+		12E9BA14263F8B0700D9E2BA /* PhoneBookListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BA13263F8B0700D9E2BA /* PhoneBookListVC.swift */; };
+		12E9BA48263F9D2C00D9E2BA /* PhoneBookDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BA47263F9D2C00D9E2BA /* PhoneBookDAO.swift */; };
+		12E9BA82263FD26100D9E2BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BA81263FD26100D9E2BA /* AppDelegate.swift */; };
+		12E9BA84263FD26100D9E2BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BA83263FD26100D9E2BA /* SceneDelegate.swift */; };
+		12E9BA89263FD26100D9E2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E9BA87263FD26100D9E2BA /* Main.storyboard */; };
+		12E9BA8C263FD26100D9E2BA /* CoreDataToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BA8A263FD26100D9E2BA /* CoreDataToDo.xcdatamodeld */; };
+		12E9BA8E263FD26300D9E2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E9BA8D263FD26300D9E2BA /* Assets.xcassets */; };
+		12E9BA91263FD26300D9E2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E9BA8F263FD26300D9E2BA /* LaunchScreen.storyboard */; };
+		12E9BACB263FD8EA00D9E2BA /* ToDoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BACA263FD8EA00D9E2BA /* ToDoListVC.swift */; };
+		12E9BB01263FE85000D9E2BA /* ToDoInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BB00263FE85000D9E2BA /* ToDoInputVC.swift */; };
 		1447BB84B8091EED4D8390B7 /* Pods_pickerview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FADC72F1AF0A766454E0036 /* Pods_pickerview.framework */; };
 		229131B17A1BBFF640BF1A4B /* Pods_AlamofireTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB074AD53C74D9C7C52BB8 /* Pods_AlamofireTest.framework */; };
 		24D9F1CC003954F9B7BDD29A /* Pods_imageSwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44BD5283484EB72E5181A2F /* Pods_imageSwipe.framework */; };
@@ -406,6 +427,38 @@
 		12C9DD3626394B6B0009E930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12C9DD4D26394C1E0009E930 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		12C9DD622639502F0009E930 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		12E9B987263F822300D9E2BA /* SQLitePhoneBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLitePhoneBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E9B989263F822300D9E2BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12E9B98B263F822300D9E2BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		12E9B990263F822300D9E2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12E9B992263F822400D9E2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12E9B995263F822400D9E2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12E9B997263F822400D9E2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E9B9B4263F839200D9E2BA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		12E9B9D0263F86B300D9E2BA /* SQLitePhoneBook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLitePhoneBook-Bridging-Header.h"; sourceTree = "<group>"; };
+		12E9B9D1263F86B400D9E2BA /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		12E9B9D2263F86B400D9E2BA /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		12E9B9D3263F86B400D9E2BA /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		12E9B9D4263F86B400D9E2BA /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		12E9B9D5263F86B400D9E2BA /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		12E9B9D6263F86B400D9E2BA /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		12E9B9D7263F86B400D9E2BA /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		12E9B9D8263F86B400D9E2BA /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		12E9B9D9263F86B400D9E2BA /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		12E9B9DA263F86B400D9E2BA /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		12E9B9DB263F86B400D9E2BA /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		12E9BA13263F8B0700D9E2BA /* PhoneBookListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookListVC.swift; sourceTree = "<group>"; };
+		12E9BA47263F9D2C00D9E2BA /* PhoneBookDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookDAO.swift; sourceTree = "<group>"; };
+		12E9BA7F263FD26100D9E2BA /* CoreDataToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E9BA81263FD26100D9E2BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		12E9BA83263FD26100D9E2BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		12E9BA88263FD26100D9E2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12E9BA8B263FD26100D9E2BA /* CoreDataToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataToDo.xcdatamodel; sourceTree = "<group>"; };
+		12E9BA8D263FD26300D9E2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12E9BA90263FD26300D9E2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		12E9BA92263FD26300D9E2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E9BACA263FD8EA00D9E2BA /* ToDoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListVC.swift; sourceTree = "<group>"; };
+		12E9BB00263FE85000D9E2BA /* ToDoInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInputVC.swift; sourceTree = "<group>"; };
 		13C546A4EB27AF7ADDDDEE16 /* Pods-AlamofireMovieList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireMovieList.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireMovieList/Pods-AlamofireMovieList.debug.xcconfig"; sourceTree = "<group>"; };
 		1FADC72F1AF0A766454E0036 /* Pods_pickerview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pickerview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD4D9DC038ABF7B18034105 /* Pods-WebDataSyncDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDataSyncDownload.release.xcconfig"; path = "Target Support Files/Pods-WebDataSyncDownload/Pods-WebDataSyncDownload.release.xcconfig"; sourceTree = "<group>"; };
@@ -666,12 +719,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12E9B984263F822300D9E2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E9B9B5263F839200D9E2BA /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E9BA7C263FD26100D9E2BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		115CD116C6B40FD86C84D78D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				12E9B9B4263F839200D9E2BA /* libsqlite3.0.tbd */,
 				3AEB074AD53C74D9C7C52BB8 /* Pods_AlamofireTest.framework */,
 				9BF4A976F38B2400DFFE3A85 /* Pods_AsyncDownload.framework */,
 				7EF5DA3EAABD2319F45C6D8A /* Pods_BasicTable.framework */,
@@ -785,6 +854,8 @@
 				120781F2263A691800186EAF /* AlamofireTest */,
 				125DA013263B8CBE00CFB9E8 /* AlamofireMovieList */,
 				125DA178263BE22E00CFB9E8 /* LocalSave */,
+				12E9B988263F822300D9E2BA /* SQLitePhoneBook */,
+				12E9BA80263FD26100D9E2BA /* CoreDataToDo */,
 				1258D43B262FAF4B00E251A7 /* Products */,
 				6D62247F5F092DF4A9175FD1 /* Pods */,
 				115CD116C6B40FD86C84D78D /* Frameworks */,
@@ -818,6 +889,8 @@
 				120781F1263A691800186EAF /* AlamofireTest.app */,
 				125DA012263B8CBE00CFB9E8 /* AlamofireMovieList.app */,
 				125DA177263BE22E00CFB9E8 /* LocalSave.app */,
+				12E9B987263F822300D9E2BA /* SQLitePhoneBook.app */,
+				12E9BA7F263FD26100D9E2BA /* CoreDataToDo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1114,6 +1187,57 @@
 				12C9DD3626394B6B0009E930 /* Info.plist */,
 			);
 			path = XMLParsing;
+			sourceTree = "<group>";
+		};
+		12E9B988263F822300D9E2BA /* SQLitePhoneBook */ = {
+			isa = PBXGroup;
+			children = (
+				12E9B9CF263F85ED00D9E2BA /* FMDB */,
+				12E9B989263F822300D9E2BA /* AppDelegate.swift */,
+				12E9B98B263F822300D9E2BA /* SceneDelegate.swift */,
+				12E9BA13263F8B0700D9E2BA /* PhoneBookListVC.swift */,
+				12E9BA47263F9D2C00D9E2BA /* PhoneBookDAO.swift */,
+				12E9B98F263F822300D9E2BA /* Main.storyboard */,
+				12E9B992263F822400D9E2BA /* Assets.xcassets */,
+				12E9B994263F822400D9E2BA /* LaunchScreen.storyboard */,
+				12E9B997263F822400D9E2BA /* Info.plist */,
+			);
+			path = SQLitePhoneBook;
+			sourceTree = "<group>";
+		};
+		12E9B9CF263F85ED00D9E2BA /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				12E9B9D4263F86B400D9E2BA /* FMDatabase.h */,
+				12E9B9D7263F86B400D9E2BA /* FMDatabase.m */,
+				12E9B9D3263F86B400D9E2BA /* FMDatabaseAdditions.h */,
+				12E9B9D5263F86B400D9E2BA /* FMDatabaseAdditions.m */,
+				12E9B9D8263F86B400D9E2BA /* FMDatabasePool.h */,
+				12E9B9D9263F86B400D9E2BA /* FMDatabasePool.m */,
+				12E9B9D1263F86B400D9E2BA /* FMDatabaseQueue.h */,
+				12E9B9D6263F86B400D9E2BA /* FMDatabaseQueue.m */,
+				12E9B9D2263F86B400D9E2BA /* FMDB.h */,
+				12E9B9DA263F86B400D9E2BA /* FMResultSet.h */,
+				12E9B9DB263F86B400D9E2BA /* FMResultSet.m */,
+				12E9B9D0263F86B300D9E2BA /* SQLitePhoneBook-Bridging-Header.h */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		12E9BA80263FD26100D9E2BA /* CoreDataToDo */ = {
+			isa = PBXGroup;
+			children = (
+				12E9BA81263FD26100D9E2BA /* AppDelegate.swift */,
+				12E9BA83263FD26100D9E2BA /* SceneDelegate.swift */,
+				12E9BACA263FD8EA00D9E2BA /* ToDoListVC.swift */,
+				12E9BB00263FE85000D9E2BA /* ToDoInputVC.swift */,
+				12E9BA87263FD26100D9E2BA /* Main.storyboard */,
+				12E9BA8D263FD26300D9E2BA /* Assets.xcassets */,
+				12E9BA8F263FD26300D9E2BA /* LaunchScreen.storyboard */,
+				12E9BA92263FD26300D9E2BA /* Info.plist */,
+				12E9BA8A263FD26100D9E2BA /* CoreDataToDo.xcdatamodeld */,
+			);
+			path = CoreDataToDo;
 			sourceTree = "<group>";
 		};
 		6D62247F5F092DF4A9175FD1 /* Pods */ = {
@@ -1605,6 +1729,40 @@
 			productReference = 12C9DD2626394B690009E930 /* XMLParsing.app */;
 			productType = "com.apple.product-type.application";
 		};
+		12E9B986263F822300D9E2BA /* SQLitePhoneBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E9B99A263F822400D9E2BA /* Build configuration list for PBXNativeTarget "SQLitePhoneBook" */;
+			buildPhases = (
+				12E9B983263F822300D9E2BA /* Sources */,
+				12E9B984263F822300D9E2BA /* Frameworks */,
+				12E9B985263F822300D9E2BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLitePhoneBook;
+			productName = SQLitePhoneBook;
+			productReference = 12E9B987263F822300D9E2BA /* SQLitePhoneBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12E9BA7E263FD26100D9E2BA /* CoreDataToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12E9BA93263FD26300D9E2BA /* Build configuration list for PBXNativeTarget "CoreDataToDo" */;
+			buildPhases = (
+				12E9BA7B263FD26100D9E2BA /* Sources */,
+				12E9BA7C263FD26100D9E2BA /* Frameworks */,
+				12E9BA7D263FD26100D9E2BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataToDo;
+			productName = CoreDataToDo;
+			productReference = 12E9BA7F263FD26100D9E2BA /* CoreDataToDo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1687,6 +1845,13 @@
 					12C9DD2526394B690009E930 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					12E9B986263F822300D9E2BA = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					12E9BA7E263FD26100D9E2BA = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 1258D435262FAF4A00E251A7 /* Build configuration list for PBXProject "iOSProject" */;
@@ -1726,6 +1891,8 @@
 				120781F0263A691800186EAF /* AlamofireTest */,
 				125DA011263B8CBE00CFB9E8 /* AlamofireMovieList */,
 				125DA176263BE22E00CFB9E8 /* LocalSave */,
+				12E9B986263F822300D9E2BA /* SQLitePhoneBook */,
+				12E9BA7E263FD26100D9E2BA /* CoreDataToDo */,
 			);
 		};
 /* End PBXProject section */
@@ -1965,6 +2132,26 @@
 				12C9DD3526394B6B0009E930 /* LaunchScreen.storyboard in Resources */,
 				12C9DD3226394B6B0009E930 /* Assets.xcassets in Resources */,
 				12C9DD3026394B690009E930 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E9B985263F822300D9E2BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E9B996263F822400D9E2BA /* LaunchScreen.storyboard in Resources */,
+				12E9B993263F822400D9E2BA /* Assets.xcassets in Resources */,
+				12E9B991263F822300D9E2BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E9BA7D263FD26100D9E2BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E9BA91263FD26300D9E2BA /* LaunchScreen.storyboard in Resources */,
+				12E9BA8E263FD26300D9E2BA /* Assets.xcassets in Resources */,
+				12E9BA89263FD26100D9E2BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2774,6 +2961,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		12E9B983263F822300D9E2BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E9B9DD263F86B400D9E2BA /* FMDatabaseQueue.m in Sources */,
+				12E9B98A263F822300D9E2BA /* AppDelegate.swift in Sources */,
+				12E9BA14263F8B0700D9E2BA /* PhoneBookListVC.swift in Sources */,
+				12E9B9DE263F86B400D9E2BA /* FMDatabase.m in Sources */,
+				12E9BA48263F9D2C00D9E2BA /* PhoneBookDAO.swift in Sources */,
+				12E9B9DF263F86B400D9E2BA /* FMDatabasePool.m in Sources */,
+				12E9B98C263F822300D9E2BA /* SceneDelegate.swift in Sources */,
+				12E9B9E0263F86B400D9E2BA /* FMResultSet.m in Sources */,
+				12E9B9DC263F86B400D9E2BA /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12E9BA7B263FD26100D9E2BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E9BA82263FD26100D9E2BA /* AppDelegate.swift in Sources */,
+				12E9BB01263FE85000D9E2BA /* ToDoInputVC.swift in Sources */,
+				12E9BA8C263FD26100D9E2BA /* CoreDataToDo.xcdatamodeld in Sources */,
+				12E9BACB263FD8EA00D9E2BA /* ToDoListVC.swift in Sources */,
+				12E9BA84263FD26100D9E2BA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -3141,6 +3356,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				12C9DD3426394B6B0009E930 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		12E9B98F263F822300D9E2BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12E9B990263F822300D9E2BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12E9B994263F822400D9E2BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12E9B995263F822400D9E2BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		12E9BA87263FD26100D9E2BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12E9BA88263FD26100D9E2BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		12E9BA8F263FD26300D9E2BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12E9BA90263FD26300D9E2BA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -4179,6 +4426,83 @@
 			};
 			name = Release;
 		};
+		12E9B998263F822400D9E2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SQLitePhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.min.SQLitePhoneBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLitePhoneBook/FMDB/SQLitePhoneBook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12E9B999263F822400D9E2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SQLitePhoneBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.min.SQLitePhoneBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SQLitePhoneBook/FMDB/SQLitePhoneBook-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		12E9BA94263FD26300D9E2BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDataToDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.min.CoreDataToDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12E9BA95263FD26300D9E2BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDataToDo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.min.CoreDataToDo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4407,7 +4731,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		12E9B99A263F822400D9E2BA /* Build configuration list for PBXNativeTarget "SQLitePhoneBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E9B998263F822400D9E2BA /* Debug */,
+				12E9B999263F822400D9E2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12E9BA93263FD26300D9E2BA /* Build configuration list for PBXNativeTarget "CoreDataToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12E9BA94263FD26300D9E2BA /* Debug */,
+				12E9BA95263FD26300D9E2BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		12E9BA8A263FD26100D9E2BA /* CoreDataToDo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				12E9BA8B263FD26100D9E2BA /* CoreDataToDo.xcdatamodel */,
+			);
+			currentVersion = 12E9BA8B263FD26100D9E2BA /* CoreDataToDo.xcdatamodel */;
+			path = CoreDataToDo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1258D432262FAF4A00E251A7 /* Project object */;
 }
