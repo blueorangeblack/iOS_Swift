@@ -32,8 +32,6 @@
 		123E6F162632556500CF12C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123E6F142632556500CF12C4 /* Main.storyboard */; };
 		123E6F182632556600CF12C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123E6F172632556600CF12C4 /* Assets.xcassets */; };
 		123E6F1B2632556600CF12C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123E6F192632556600CF12C4 /* LaunchScreen.storyboard */; };
-		123E6F2A263256F800CF12C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123E6F29263256F800CF12C4 /* SecondViewController.swift */; };
-		123E6F2B263256F800CF12C4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123E6F29263256F800CF12C4 /* SecondViewController.swift */; };
 		123E6F3626326D3500CF12C4 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123E6F3526326D3500CF12C4 /* SubViewController.swift */; };
 		123E6F3726326D3500CF12C4 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123E6F3526326D3500CF12C4 /* SubViewController.swift */; };
 		1258D43E262FAF4B00E251A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258D43D262FAF4B00E251A7 /* AppDelegate.swift */; };
@@ -141,6 +139,7 @@
 		12BD18E72631537300DEA1CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BD18E52631537300DEA1CB /* Main.storyboard */; };
 		12BD18E92631537400DEA1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12BD18E82631537400DEA1CB /* Assets.xcassets */; };
 		12BD18EC2631537400DEA1CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12BD18EA2631537400DEA1CB /* LaunchScreen.storyboard */; };
+		12C550C52640FE4D002CA23B /* LogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C550C42640FE4D002CA23B /* LogVC.swift */; };
 		12C9DC7A2638F54F0009E930 /* CarCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DC792638F54F0009E930 /* CarCollectionHeaderView.swift */; };
 		12C9DCA2263906380009E930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DCA1263906380009E930 /* AppDelegate.swift */; };
 		12C9DCA4263906380009E930 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C9DCA3263906380009E930 /* SceneDelegate.swift */; };
@@ -189,6 +188,7 @@
 		12E9BA91263FD26300D9E2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E9BA8F263FD26300D9E2BA /* LaunchScreen.storyboard */; };
 		12E9BACB263FD8EA00D9E2BA /* ToDoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BACA263FD8EA00D9E2BA /* ToDoListVC.swift */; };
 		12E9BB01263FE85000D9E2BA /* ToDoInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BB00263FE85000D9E2BA /* ToDoInputVC.swift */; };
+		12E9BB372640325C00D9E2BA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9BB362640325C00D9E2BA /* SecondViewController.swift */; };
 		1447BB84B8091EED4D8390B7 /* Pods_pickerview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FADC72F1AF0A766454E0036 /* Pods_pickerview.framework */; };
 		229131B17A1BBFF640BF1A4B /* Pods_AlamofireTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AEB074AD53C74D9C7C52BB8 /* Pods_AlamofireTest.framework */; };
 		24D9F1CC003954F9B7BDD29A /* Pods_imageSwipe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44BD5283484EB72E5181A2F /* Pods_imageSwipe.framework */; };
@@ -251,7 +251,6 @@
 		123E6F172632556600CF12C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		123E6F1A2632556600CF12C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		123E6F1C2632556600CF12C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		123E6F29263256F800CF12C4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = SOURCE_ROOT; };
 		123E6F3526326D3500CF12C4 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		1258D43A262FAF4B00E251A7 /* iOSProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1258D43D262FAF4B00E251A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -391,6 +390,7 @@
 		12BD18E82631537400DEA1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12BD18EB2631537400DEA1CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12BD18ED2631537400DEA1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C550C42640FE4D002CA23B /* LogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogVC.swift; sourceTree = "<group>"; };
 		12C9DC792638F54F0009E930 /* CarCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionHeaderView.swift; sourceTree = "<group>"; };
 		12C9DC9F263906380009E930 /* SocketUse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketUse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C9DCA1263906380009E930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -459,6 +459,7 @@
 		12E9BA92263FD26300D9E2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E9BACA263FD8EA00D9E2BA /* ToDoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListVC.swift; sourceTree = "<group>"; };
 		12E9BB00263FE85000D9E2BA /* ToDoInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInputVC.swift; sourceTree = "<group>"; };
+		12E9BB362640325C00D9E2BA /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		13C546A4EB27AF7ADDDDEE16 /* Pods-AlamofireMovieList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofireMovieList.debug.xcconfig"; path = "Target Support Files/Pods-AlamofireMovieList/Pods-AlamofireMovieList.debug.xcconfig"; sourceTree = "<group>"; };
 		1FADC72F1AF0A766454E0036 /* Pods_pickerview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pickerview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD4D9DC038ABF7B18034105 /* Pods-WebDataSyncDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebDataSyncDownload.release.xcconfig"; path = "Target Support Files/Pods-WebDataSyncDownload/Pods-WebDataSyncDownload.release.xcconfig"; sourceTree = "<group>"; };
@@ -817,7 +818,7 @@
 				123E6F0E2632556500CF12C4 /* AppDelegate.swift */,
 				123E6F102632556500CF12C4 /* SceneDelegate.swift */,
 				123E6F122632556500CF12C4 /* ViewController.swift */,
-				123E6F29263256F800CF12C4 /* SecondViewController.swift */,
+				12E9BB362640325C00D9E2BA /* SecondViewController.swift */,
 				123E6F3526326D3500CF12C4 /* SubViewController.swift */,
 				1259FF77263298D7001ACC56 /* DetailViewController.swift */,
 				123E6F142632556500CF12C4 /* Main.storyboard */,
@@ -1231,6 +1232,7 @@
 				12E9BA83263FD26100D9E2BA /* SceneDelegate.swift */,
 				12E9BACA263FD8EA00D9E2BA /* ToDoListVC.swift */,
 				12E9BB00263FE85000D9E2BA /* ToDoInputVC.swift */,
+				12C550C42640FE4D002CA23B /* LogVC.swift */,
 				12E9BA87263FD26100D9E2BA /* Main.storyboard */,
 				12E9BA8D263FD26300D9E2BA /* Assets.xcassets */,
 				12E9BA8F263FD26300D9E2BA /* LaunchScreen.storyboard */,
@@ -2736,10 +2738,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123E6F2B263256F800CF12C4 /* SecondViewController.swift in Sources */,
 				123E6F132632556500CF12C4 /* ViewController.swift in Sources */,
 				123E6F3726326D3500CF12C4 /* SubViewController.swift in Sources */,
 				1259FF78263298D7001ACC56 /* DetailViewController.swift in Sources */,
+				12E9BB372640325C00D9E2BA /* SecondViewController.swift in Sources */,
 				123E6F0F2632556500CF12C4 /* AppDelegate.swift in Sources */,
 				123E6F112632556500CF12C4 /* SceneDelegate.swift in Sources */,
 			);
@@ -2749,7 +2751,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123E6F2A263256F800CF12C4 /* SecondViewController.swift in Sources */,
 				1258D442262FAF4B00E251A7 /* ViewController.swift in Sources */,
 				123E6F3626326D3500CF12C4 /* SubViewController.swift in Sources */,
 				1258D43E262FAF4B00E251A7 /* AppDelegate.swift in Sources */,
@@ -2982,6 +2983,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E9BA82263FD26100D9E2BA /* AppDelegate.swift in Sources */,
+				12C550C52640FE4D002CA23B /* LogVC.swift in Sources */,
 				12E9BB01263FE85000D9E2BA /* ToDoInputVC.swift in Sources */,
 				12E9BA8C263FD26100D9E2BA /* CoreDataToDo.xcdatamodeld in Sources */,
 				12E9BACB263FD8EA00D9E2BA /* ToDoListVC.swift in Sources */,
