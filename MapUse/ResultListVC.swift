@@ -41,5 +41,14 @@ class ResultListVC: UITableViewController {
         cell?.accessoryType = .disclosureIndicator
         return cell!
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //RouteVC 클래스의 객체를 생성
+        
+        let routeVC = self.storyboard?.instantiateViewController(identifier: "RouteVC") as! RouteVC
+        let destination = mapItem?[indexPath.row]
+        routeVC.destination = destination
+        self.navigationController?.pushViewController(routeVC, animated: true)
+    }
 
 }

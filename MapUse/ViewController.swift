@@ -23,12 +23,17 @@ class ViewController: UIViewController {
         }
     }
     
+    var m : CLLocationDistance = 3000
     @IBAction func zoom(_ sender: Any) {
         //현재 위치 가져오기
         let userLocation = mapView.userLocation
         
-        //지도의 출력 크기 설정 - 현재 위치를 기준으로 반경 3km
-        let region = MKCoordinateRegion(center: userLocation.location!.coordinate, latitudinalMeters: 3000, longitudinalMeters: 3000)
+        //지도의 출력 크기 설정 - 현재 위치를 기준으로 반경
+        //처음에는 3km => 그 다음은 m / 2
+        let region = MKCoordinateRegion(center: userLocation.location!.coordinate, latitudinalMeters: m, longitudinalMeters: m)
+        
+        m = m / 2
+        
         //맵 뷰에 영역 설정
         mapView.setRegion(region, animated: true)
     }
@@ -100,6 +105,10 @@ class ViewController: UIViewController {
         self.performSearch()
     }
     
+    //특정 영역에 접근하면 이미지를 출력하기 위한 프로퍼티
+    var region : CLCircularRegion!
+    var couponView : UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -115,12 +124,39 @@ class ViewController: UIViewController {
         
         //mapView의 delegate 설정
         mapView.delegate = self
+        
+        
+        //영역에 접근하면 이미지를 출력하기 위한 초기화 작업
+        //영역 생성 (중앙의 좌표)
+        let center = CLLocationCoordinate2D(latitude: 37.5690886, longitude: 126.984652)
+        let maxDistance = 1000.0
+        region = CLCircularRegion(center: center, radius: maxDistance, identifier: "종로")
+        
+        //영역에 들어오고 나가는 것을 감시
+        locationManager?.startMonitoring(for: region)
+        
+        //이미지 뷰 생성
+        couponView = UIImageView(image:  UIImage(named: "coupon.png"))
+        couponView.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        
+        //이벤트 처리 메소드의 위치 설정
+        locationManager?.delegate = self
     }
 }
 
-extension ViewController : MKMapViewDelegate{
+extension ViewController : MKMapViewDelegate, CLLocationManagerDelegate{
     //사용자의 위치가 변경될 때 호출되는 메소드
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         mapView.centerCoordinate = userLocation.location!.coordinate
+    }
+    
+    //영역에 들어왔을 때 호출되는 메소드
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        mapView.addSubview(couponView)
+    }
+    
+    //영역에서 벗어났을 때 호출되는 메소드
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        couponView.removeFromSuperview()
     }
 }
