@@ -51,7 +51,7 @@ class ViewController: UIViewController{
         audioPlayer = try! AVAudioPlayer(contentsOf: url)
         //prepareToPlay() 재생준비
         audioPlayer?.prepareToPlay()
- 
+
         //2) 스트리밍 재생 - 오류나는 상황
 /*
         let url = URL(string: "http://cyberadam.cafe24.com/song/if.mp3")
@@ -135,13 +135,65 @@ class ViewController: UIViewController{
     }
     
     @IBAction func upload(_ sender: Any) {
-        //업로드할 URL : http://IP주소/ite/insert
+        //업로드할 URL : http://IP주소/item/insert
         //전송 방식 : POST
         //파일 업로드 여부 : 있음
         //파라미터 : itemname, description, price, pictureurl(파일)
         //헤더 : 없음
         //결과 형식 : json
         //결과 해석 : {result:true 또는 false}
+        
+        //3개의 문자열을 입력받는 대화상자
+        let addAlert = UIAlertController(title: "이미지 추가", message: "추가할 이미지정보를 입력하세요", preferredStyle: .alert)
+        addAlert.addTextField(){(tf) in
+            tf.placeholder = "이름을 입력하세요"
+        }
+        addAlert.addTextField(){(tf) in
+            tf.placeholder = "가격을 입력하세요"
+            tf.keyboardType = .numberPad
+        }
+        addAlert.addTextField(){(tf) in
+            tf.placeholder = "설명을 입력하세요"
+        }
+        addAlert.addAction(UIAlertAction(title: "취소", style: .cancel))
+        addAlert.addAction(UIAlertAction(title: "확인", style: .default){(action) -> Void in
+            //입력받은 내용 가져오기
+            let itemname = addAlert.textFields?[0].text
+            let price = addAlert.textFields?[1].text
+            let description = addAlert.textFields?[2].text
+            //파일 파라미터를 제외한 파라미터 생성
+            let parameters = ["itemname":itemname!, "price":price!, "description":description!]
+
+            AF.upload(multipartFormData: {multipartFormData -> Void in
+                //파라미터 전송
+                for(key, value) in parameters{
+                    multipartFormData.append((value as String).data(using: .utf8)!, withName: key)
+                }
+                //이미지 파일 전송
+                let image = self.imageView.image
+                if image != nil{
+                    multipartFormData.append(image!.pngData()!, withName: "pictureurl", fileName: "file.png", mimeType: "image/png")
+                }
+            }, to: "http://IP주소/item/insert", method: .post, headers: nil)
+                .responseJSON{response in
+                //결과가 전송된 경우 수행할 내용
+                    if let jsonObject = response.value as? [String:Any]{
+                        //결과 가져오기
+                        let result = jsonObject["result"] as? Bool
+                        var msg = ""
+                        if result!{
+                            msg = "삽입 성공"
+                        }else{
+                            msg = "삽입실패"
+                        }
+                        //결과 대화상자 출력
+                        let msgAlert = UIAlertController(title: "데이터 삽입", message: msg, preferredStyle: .alert)
+                        msgAlert.addAction(UIAlertAction(title: "확인", style: .default))
+                        self.present(msgAlert, animated: true)
+                    }
+            }
+        })
+        present(addAlert, animated: true)
     }
 }
 
