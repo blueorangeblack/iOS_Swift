@@ -46,9 +46,9 @@ class ViewController: UIViewController{
         //노래 파일의 경로 생성
 
         //1) 번들에 있는 파일 재생
-        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "PAIX PER MIL-1-0.000", ofType: "mp3")!, relativeTo: nil)
+        //let url = URL(fileURLWithPath: Bundle.main.path(forResource: "PAIX PER MIL-1-0.000", ofType: "mp3")!, relativeTo: nil)
         //재생기 생성
-        audioPlayer = try! AVAudioPlayer(contentsOf: url)
+        //audioPlayer = try! AVAudioPlayer(contentsOf: url)
         //prepareToPlay() 재생준비
         audioPlayer?.prepareToPlay()
 

@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.4.3)
+  - SwipeViewController (2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - SwipeViewController
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwipeViewController
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  SwipeViewController: 87ac3b72473f2caee7b84a7761c9367501fd557a
+
+PODFILE CHECKSUM: 057d0ed84ebdf313bffc363eb5c65bdd2277f37b
+
+COCOAPODS: 1.10.1
